@@ -27,7 +27,7 @@ st.markdown("""
 col1, col2 =  st.columns([0.2, 0.7])
 with col1:
     # Logo Image
-    logo = st.image("src\image\logo.png", width=100)
+    logo = st.image("src/image/logo.png", width=100)
 with col2:
     # Page Title
     st.title("Omdena, Kano Nigeria Chapter - Food Prices Analysis & Prediction")
@@ -39,7 +39,7 @@ if not os.path.isfile(csv_file_path):
     df = pd.DataFrame(columns=['Name', 'Email', 'Subject', 'Feedback'])
     df.to_csv(csv_file_path, index=False)
 
-df = pd.read_csv('src\data\preprocessed_data.csv')
+df = pd.read_csv('src/data/preprocessed_data.csv')
 
 # Filters at the top of the page
 st.title("Dashboard Filters")
